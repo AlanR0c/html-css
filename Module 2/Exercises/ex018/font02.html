@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="font_fav2.ico" type="image/x-icon">
+    <title>Web Fonts</title>
+    <style>
+        @font-face {
+            font-family: 'London';
+            src: url('fonts/Olondon_.otf') format('opentype'), url('fonts/OldLondon.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: London, 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }/*Notice that the font-family name can be put either inside a set of single quotation marks or without any quotation marks at all*/
+    </style><!--This is an internal CSS-->
+</head>
+<body>
+    <h1>Fucking Title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas illum cupiditate voluptatum ad, commodi quis inventore accusamus et aspernatur voluptate culpa consectetur soluta repellendus fuga? Rerum iusto quis omnis molestiae.</p>
+</body>
+</html>
+<!--Ye must always check out for the sort of glyphs a font might or not have. When it comes to Portuguese, for instance, there some fonts that do not contain glyphs with accent marks that are vastly used in this language, which could cause limitations to the user experience. Some fonts, like 'Love Story', only got capital glyphs, which could also be an issue.
+Types of font format:
+1- opentype(otf)
+2- truetype(ttf)
+3- embedded-opentype
+4- truetype-aat(Apple Advance Typography)
+5- svg-->

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Lists</title>
+</head>
+<body>
+    <h1>Working With Lists</h1>
+    <h2>Ordered Lists</h2>
+    <p>The HTML &ltol&gt tag defines an ordered list. An ordered list can be numerical or alphabetical. An ordered list starts with the &ltol&gt tag. Each list item starts with the &ltli&gt tag. The list items will be marked with numbers by default.</p>
+    <ol>
+        <li>Wake up</li>
+        <li>Wash up</li>
+        <li>Have breakfast</li>
+        <li>Get ready</li>
+        <li>Call clients</li>
+    </ol>
+    <p>Ye can also add some parameters to the ordered list. For example, if ye want to have letters instead of numbers or start the list from a specific number or letter.</p>
+    <p>Ye can use capital or small letters. All ye got to do is choose the letter on "type". Using capital letters:</p>
+    <ol type="A">
+        <li>Wake up</li>
+        <li>Wash up</li>
+        <li>Have breakfast</li>
+        <li>Get ready</li>
+        <li>Call clients</li>
+    </ol>
+    <p>Using small letters:</p>
+    <ol type="a">
+        <li>Wake up</li>
+        <li>Wash up</li>
+        <li>Have breakfast</li>
+        <li>Get ready</li>
+        <li>Call clients</li>
+    </ol>
+    <p>Starting the list from a specific number:</p>
+    <ol type="1" start="2">
+        <li>Wake up</li>
+        <li>Wash up</li>
+        <li>Have breakfast</li>
+        <li>Get ready</li>
+        <li>Call clients</li>
+    </ol>
+    <p>Ye can also use Roman characters, either capital or small:</p>
+    <ol type="I">
+        <li>Wake up</li>
+        <li>Wash up</li>
+        <li>Have breakfast</li>
+        <li>Get ready</li>
+        <li>Call clients</li>
+    </ol>
+    <ol type="i">
+        <li>Wake up</li>
+        <li>Wash up</li>
+        <li>Have breakfast</li>
+        <li>Get ready</li>
+        <li>Call clients</li>
+    </ol>
+    <h2>Unordered Lists</h2>
+    <ul type="disc">
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Cheese</li>
+        <li>Coffee</li>
+        <li>Ham</li>
+    </ul>
+    <ul type="circle">
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Cheese</li>
+        <li>Coffee</li>
+        <li>Ham</li>
+    </ul>
+    <ul type="square">
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Cheese</li>
+        <li>Coffee</li>
+        <li>Ham</li>
+    </ul>
+    <h2>Nested Lists</h2>
+    <h3>Me favourite languages</h3>
+    <ol>
+       <li>Old Ones</li>
+       <ol type="I">
+        <li>Clipper</li>
+        <li>Visual Basic</li>
+        <li>Fortram</li>
+        <li>Delphi</li>
+       </ol>
+       <li>New Ones</li> 
+       <ol type="I", start="5">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+       </ol>
+    </ol>
+    <h2>Me Favourite Consoles and Games</h2>
+    <ol>
+        <li>SNES</li>
+        <ul type="disc">
+            <li>Super Mario World 2</li>
+            <li>Sunset Riders</li>
+            <li>International Superstar Soccer Deluxe</li>
+        </ul>
+        <li>Playstation</li>
+        <ul type="disc">
+            <li>Formula 1</li>
+            <li>Resident Evil</li>
+            <li>Resident Evil 2</li>
+            <li>Resident Evil 3</li>
+            <li>Metal Gear Solid</li>
+            <li>Winning Eleven</li>
+        </ul>
+        <li>Playstation 2</li>
+        <ul type="disc">      
+            <li>GTA San Andreas</li>
+            <li>GTA Vice City</li>
+            <li>Pro Evolution Soccer</li>
+            <li>Terminator 3: Rise Of The Machines</li>
+            <li>The Matrix</li>
+        </ul>
+        <li>Playstation 3</li>
+        <ul type="disc">
+            <li>GTA V</li>
+            <li>Skyrim</li>
+            <li>Red Dead Redemption</li>
+            <li>FIFA 11</li>
+        </ul>
+        <li>Playstation 4</li>
+        <ul type="disc">
+            <li>GTA V</li>
+            <li>Skyrim</li>
+            <li>Red Dead Redemption 2</li>
+            <li>FIFA 17</li>
+            <ul type="square">
+                <li>FIFA18</li>
+                <li>FIFA19</li>
+            </ul>
+            <li>Shadow Of Mordor</li>
+        </ul>
+        <li>XBOX One S</li>
+        <ul type="disc">
+            <li>Red Dead Redemption 2</li>
+            <li>FIFA 22</li>
+            <li>Dante's Inferno</li>
+        </ul>
+    </ol>
+    <h2>Description Lists</h2>
+    <p>A description list is a list of terms, with a description of each term.  The &ltdl&gt tag defines the description list, the &ltdt&gt tag defines the term (name), and the &ltdd&gt tag describes each term:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>noun - Computing - Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages. Eg, "an HTML file"</dd>
+        <dt>CSS</dt>
+        <dd>noun - Computing - Cascading Style Sheets is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.</dd>
+        <dt>JavaScript</dt>
+        <dd>noun - TRADEMARK - an object-oriented computer programming language commonly used to create interactive effects within web browsers.</dd>
+    </dl>
+</body>
+</html>
+
+<!--The parameter "start" only works with number. I can't start a list from, for instance, the letter 'c' simply cos it only works with numbers, which means that I could start a list from number '3' though. However, in order to use the parameter "start" with letters, all ye got to do is think of each letter as an element. So, if I wanted to start from the letter 'c', all I got to do is enter number 3, for c is the third letter of the alphabet.
+Guanabara shows a really helpful trick: if ye want to change multiple tags, press and hold the alt key and select all the tags ye want to, then ye delete the selected tags and enter a new one. Then ye click elsewhere to confirm the changes. This trick can also be used when ye want to add multiple parameters. 
+The three sorts of icons in list are: square, circle and disc-->

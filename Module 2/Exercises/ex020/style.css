@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*pseudoclass.html*/
+div#d1#d2#d3 {
+    display: inline-block;
+    background-color: lightgrey;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div#d1 {
+    display: inline-block;
+    background-color: lightgrey;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div#d2 {
+    display: inline-block;
+    background-color: lightgrey;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div#d3 {
+    display: inline-block;
+    background-color: lightgrey;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+/*div#d1 { we can stylise a div this way, by identifying it with div# and its id.
+    background-color: red;
+}*/
+
+div#d1:hover {
+    background-color: lime;
+    border-radius: 10px;
+}
+
+div#d2:hover {
+    background-color: lime;
+    border-radius: 10px;
+}
+
+div#d3:hover {
+    background-color: lime;
+    border-radius: 10px;
+}
+
+/*hover*/
+
+div > p {
+    display: none;
+} /*This means that the p that will be stylised or changed will the the one inside a div, in other words, the div's son.*/
+
+div#hvex:hover > p {
+    display: block;
+    color: white;
+    background-color: red;
+    width: 300px;
+}/*This means that the p that will be altered will be only the one(s) that might be the div's son, and here we're displaying the hidden p whenever the user hovers the cursor over it.*/
+
+div#hvex:hover {
+    color: red;
+}
+
+/*Remeber:
+#(CSS) = id(HTML)
+.(CSS) = class(HTML)
+:(CSS) = pseudo-class(HTML)*/

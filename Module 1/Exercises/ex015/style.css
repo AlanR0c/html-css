@@ -1,0 +1,20 @@
+@charset "UTF-8"; /* #1 */
+
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: chartreuse;
+    font-size: 20px;
+ }
+ h1 {
+    color: orange;
+    background-color: black;
+ }
+ h2 {
+    color: red;
+ }
+ p {
+    text-align: justify;
+ }  
+
+ /*Guanabara explains that every single rule that might be necessary to be set will be on top of everything, followed by the @ sign, as the '"charset UTF-8;"' used here.*/ 
+ /*#1 - The @charset rule specifies the character encoding used in the style sheet. The @charset must be the first element in the style sheet and if several @charset rules are defined then the only first one is used. It can not be used in the <style> element where the character set of the HTML page is relevant.*/

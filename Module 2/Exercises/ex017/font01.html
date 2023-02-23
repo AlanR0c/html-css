@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fonts_favicon.ico" type="image/x-icon">
+    <title>CSS Fonts</title>
+    <style> /*Remember, this is internal or local Css*/
+        body {
+            font-family: 'Courier New', Courier, monospace;/*safe combination - it means that if a device hasn't got the first font, it checks the second one and so on and so forth.*/
+            font-size: 1em;
+            font-weight: bolder;
+            font-style: italic;
+            text-decoration: underline;/*this is the way ye got to code these settings*/
+        }
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+            /*example of shorthand font:
+            font: italic bolder 3em 'arial*, sans-serif*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Working With Different Fonts</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, adipisci eligendi! Nulla distinctio, velit praesentium maxime voluptatum assumenda adipisci optio odit harum exercitationem obcaecati dolorum voluptas, facere minus magni doloremque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus blanditiis iusto eos porro illo quos, quaerat sequi recusandae molestias totam dignissimos unde autem, tenetur aliquam eaque! Explicabo nam qui id! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam veritatis velit reprehenderit, quaerat non nisi facere praesentium eius obcaecati quae voluptatum dolores quod dolorum assumenda. Totam natus in enim dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum eius, nisi neque enim magnam, quas minus voluptatem ut, explicabo saepe quam debitis dolor dicta reiciendis excepturi blanditiis distinctio porro!</p>
+    <h2>Subheading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad repellat nisi ducimus nam dolores accusamus quaerat dolorem blanditiis ipsum, cupiditate iusto rerum. Animi facilis fugit atque sed provident veritatis?</p>
+</body>
+</html>
+
+<!--If ye set the font_family to either sans-serif, serif or monospace, the device will select any font of this family that might be availabe, which means, that you'll never run the risk of having a font that might not be supported by this or that device. Guanabara also mentions that in case of doubt, it's advisable to check the w3school website and check for the most used safe combinations. Guanabara also talked about font size and the importance of following the rules established by the W3C . The size table is as follows:
+Absolute Lengths: 
+cm	centimeters
+mm	millimeters
+in -	inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt -	points (1pt = 1/72 of 1in)
+pc -	picas (1pc = 12 pt)
+
+Relative Lengths:
+em -	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex -	Relative to the x-height of the current font (rarely used)	
+ch -	Relative to the width of the "0" (zero)	
+rem -	Relative to font-size of the root element	
+vw -	Relative to 1% of the width of the viewport*	
+vh -	Relative to 1% of the height of the viewport*	
+vmin -	Relative to 1% of viewport's* smaller dimension	
+vmax -	Relative to 1% of viewport's* larger dimension	
+% -	Relative to the parent element
+He goes on talking about that the recommended lengths are 'px' and 'em' used on websites, and that we should not use the others that much...The 'pt' one, for example, is used for printed media, the one used on Microsoft Word or WordPad. He says that the standard font size used by browsers is 16px(which equals 1em). The 'em' length has got a better range when it comes to compatibility on different devices and their screen sizes, and therefore should be the one to be used "more often" in order to avoid unwanted issues.
+In order to use the 'Work Sans' font, ye must import it. 
+He mentions the font weight, which are: lighter, normal, bold and bolder.
+He explained about shorthand font which follows the following order: 1 font-style, 2, font-weight, 3 font-size and 4 font-family. -->

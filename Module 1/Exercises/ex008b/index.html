@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="text_format2.ico" type="image/x-icon">
+    <title>Other Ways Of Text Formatting</title>
+</head>
+<body>
+    <h1>Other Ways Of Text Formatting.</h1>
+    <h2>Source Code/ Preformatted text</h2>
+    <p>The command <code>document.getElementById('test')</code> is a JavaScript command. The &ltcode&gt tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.</p>
+    <p>This is an example of using the &ltcode&gt and &ltpre&gt tags together:</p>
+    <pre>
+        <code>
+    num = int(input('Enter a number':))
+    if num % 2 == 0:
+    print(f'The number {num} is an even number.')
+    else:
+    print(f'The number {num} is an odd number.')
+        </code>
+    </pre>
+    <p>The &ltpre&gt tag <ins>defines preformatted text</ins>. Text in a &ltpre&gt element is displayed in a fixed-width font, and the text preserves both spaces and line breaks.</p>
+    <h2>Short Quotations(in a semantic way)</h2>
+    <p>The HTML &ltq&gt tag defines a short quotation, as follows:</p>
+    <p>WWF's goal is to: <q>Build a future where people live harmony with nature.</q></p>
+    <h2>Quotations</h2>
+    <p>The HTML &ltblockquote&gt element defines a section that is quoted from another source. Browsers usually indent &ltblockquote&gt elements. Note that "cite" is a parameter that ye can use to enter the url which ye got the quote from. Eg:</p>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+    <h2>Abbreviations</h2>
+    <p>The &ltabbr&gt tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. Eg:</p>
+    <p><abbr title="Hypertext Markup Language">HTML5</abbr> and <abbr title="Cascading Style Sheets">CSS3</abbr> are widely used front-end languages.</p>
+    <p>The <abbr title="World Health Organisation">WHO</abbr> was founded in 1948.</p>
+    <h2>Overriding Text Direction</h2>
+    <p>BDO stands for Bi-Directional Override. The &ltbdo&gt tag is used to override the current text direction. The attribute 'dir'(direction) is required and it specifies the text direction of the text inside the &ltbdo&gt element. 'ltr' stands for "left to the right", and 'rtl' stands for "right to the left". Eg:</p>
+    <p><bdo dir="rtl">.nwod gnillaf si egdirB nodnoL</bdo></p>
+    <p><bdo dir="rtl">London Bridge is falling down.</bdo></p>
+</body>
+</html>
+
+<!--If ye select an entire block of code, hold the shift key and hit the tab key, this selected block of code gets backspaced, that is, it gets moved to left hand-side of the screen. If ye let go of the shift key, ye can space the whole block. 
+Guanabara mentions that the <bdo> tag is sort of useless, I sort of see what he means lol-->

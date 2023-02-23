@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="box_favicon.ico" type="image/x-icon">
+    <title>Semantic Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgrey;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: darkgrey;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            box-shadow: inset 1px 3px 7px rgba(0, 0, 0, 0.666);
+            /*box-shadow: 5px 4px 7px 1px black*/
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+            box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.468);
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            background-color: black;
+            font-size: 2em;
+            border-radius: 3px;
+        }
+
+        /*.nav-item {if I code this way, the items will be diplayed as though they're a list, which's not ideal in this case.
+            display: flex;
+            justify-content: flex-end;
+        }*/
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;/*Check explanation at the bottom*/
+            box-shadow: 4px 4px 9px 0px black;
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#ball {
+            height: 150px;
+            width: 150px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This Is Me Website</h1>
+        <nav>
+            <a href="" class="nav-item">Link</a>
+            <a href="" class="nav-item">Link</a>
+            <a href="" class="nav-item">Link</a>
+            <a href="" class="nav-item">Link</a>
+            <a href="" class="nav-item">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="sports">
+            <article>
+                <h2>Sports</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, ab voluptatem et, quam placeat fugit exercitationem rerum deserunt, hic nobis ea numquam ipsam neque eligendi corrupti iure! Accusamus, velit possimus!</p>
+                <aside>
+                    <p>Find out more about sports by <a href="https://www.bbc.com/sport" target="_blank" rel="external">clicking here</a>.</p>
+                </aside>
+            </article>
+
+        </section>
+        <section id="politics">
+            <article>
+                <h2>Brexit</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore asperiores, soluta ipsum nulla, voluptatibus laboriosam perspiciatis inventore sunt iusto ipsam ut quas perferendis eligendi iure dignissimos beatae ad quasi deserunt!</p>
+                <aside>
+                    <p>Written by John Brown</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Ukraine</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos neque deserunt tenetur fugiat accusamus cumque voluptates pariatur consequuntur ratione impedit dolor doloribus cupiditate, repudiandae at quo natus aperiam. Incidunt!</p>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Developed by Mr Brown</p>
+    </footer>
+    <div id="ball"></div>
+</body>
+</html>
+<!-- IMPORTANT!
+div is box-level
+span is inline-level
+
+The border-radius modifies the border-top-left-radius, the border-top-right-radius, the border-bottom-right-radius and the border-bottom-left-radius. As with the other shorthands, if ye only set border-radius: 20px; it'll set 20px to all of them. However, if ya code border-radius: 10px 40px; then it'll set 10px to the border-top-left-radius and the border-bottom-right-radius, and 40px to the border-top-right-radius and to the border-bottom-left-radius. You can always set the 4 of them differently as well, like so: border-radius: 10px 15px 10px 15px/
+-->

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="video_icon.ico" type="image/x-icon">
+    <title>HTML5 Video</title>
+</head>
+<body>
+    <h1>Showing Local Videos In HTML5</h1>
+    <p>This is a self-hosted video.</p>
+    <video width="560" poster="plane_cover.png" controls autoplay loop>
+        <source src="video/me_vid.m4v" type="video/mp4">
+        <source src="video/me_vid.mp4" type="video/mp4">
+        <source src="video/me_vid.webm" type="video/webm">
+        <source src="video/me_vid.ogv" type="video/ogg">
+    </video><!--All these videos here do consume data from the client's own server, which's not ideal whatsoever.-->
+    <h1>Showing Videos From YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iuiP1I9u00E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--This vid consumes data from the YouTube website, which means it costs absolutely nothing to yer client, which's the ideal scenario. Anyone can watch your videos if ye use YouTube. Advising the client to use videos from the YouTube website will increase their website visibility, for Google is the most user search engine in the world, and YouTube comes next. Also, remember that Google owns Youtube, actually both belong to Alphabet Inc.-->
+    <h1>Showing Videos From Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/128014070?h=c78a614d02&color=ffffff&title=0&byline=0&portrait=0" width="560" height="420" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe><!--As with YouTube, this vid consumes data from the Vimeo website, which means it costs absolutely nothing to yer client, and again, the ideal scenario. Vimeo doesn't have a limit of data usage, only the amout of videos ye upload per month. On Vimeo ye can decide who can or cannot watch yer videos.-->
+</body>
+</html>
+
+<!--Notice the 'type' peculiarities: the 'ogv' file got the 'ogg' parameter, which's the same for an audio file, and the 'm4v' file got the 'mp4' parameter, which, again, is the same used for an audio file. Once again, we've created an error message in case the browser is unable to play any of the files.
+
+We use the parameter 'width' to set the size of the video that will be displayed on the website.
+
+We user the parameter 'poster' as a "cover" that will be shown while the user doesn't press the 'play' button. The parameter 'loop' keep playing the video, literally speaking, it keeps is in a loop. The parameter 'autoplay' is not working at all on Google Chrome.
+
+As with the image files, the browser will try to play the first file, which's the 'ogv' one. If sth goes wrong and this file cannot be played, then the browser goes to the next one, which's the 'm4v', and so on and so forth. If it turns out none of them are playable by the browser, then the error message will be displayed. Guanabara advises to put as many formats as possible, so as to avoid incompatibility with the user's browser.
+However, Guanabara explains that self-hosted videos do consume a lot of data, and that means that it's going to cost the client a lot of money. It's good practice, as well as reasonable, to warn the client beforehand.
+Copyrights got to be taken into consideration as well, ye can't just upload videos without checking possible restrictions out.-->

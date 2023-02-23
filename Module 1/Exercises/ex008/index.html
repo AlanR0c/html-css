@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="text_format.ico" type="image/x-icon">
+    <title>Text Formatting</title>
+    <style>
+        mark {
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Main HTML5 Formatting Elements </h1>
+    <h2>Bold Text/Strong Text</h2>
+    <p>In this sentence we have created <b>a phrase in bold</b>, and we achieved this by using the &ltb&gt &lt/b&gt tag(this is a non-semantic way).</p>
+    <p>In this sentence we have created <strong> a phrase with strong importance</strong>, and we achieved this by using the &ltstrong&gt &lt/strong&gt tag(this is a semantic way).</p>
+    <h2>Italic Text/Emphasized Text</h2>
+    <p>In this sentence we have created <i>a phrase in italic</i>, and we achieved this by using the &lti&gt &lt/i&gt tag(this is a non-semantic way).</p>
+    <p>In this sentence we have created <em>an emphasized phrase</em>, and we achieved this by using the &ltem&gt &lt/em&gt tag(this is a semantic or meaningful way).</p>
+    <h2>Marked Text</h2>
+    <!--<p>In this sentence we have created <mark style="background-color: springgreen;">a marked or highlighted phrase</mark>, and we achieved this by using the &ltmark&gt &lt/mark&gt tag(this is a non-semantic way).</p>-->
+    <p>In this sentence we have created <mark>a marked or highlighted phrase</mark>, and we achieved this by using the &ltmark&gt &lt/mark&gt tag(this is a non-semantic way).</p>
+    <p>In this sentence we have created another <mark>a marked or highlighted phrase</mark>, and we achieved this by using the &ltmark&gt &lt/mark&gt tag(this is a non-semantic way).</p>
+    <h2>Specifying big(non-semantic) and small text(semantic)</h2>
+    <p>In this sentence we have created <big>a big text or fonts</big> and <small>a small text or fonts</small>. Notice that while the small tag is still accepted by the W3C, the big tag has been rendered obsolete by them, hence the tag big being red-coloured. </p>
+    <h2>A Text With a Deleted Part(this is a semantic way)</h2>
+    <p>In this sentece we have created <del>a text with a deleted part</del>.</p>
+    <h2>A Text With an Inserted Part(this is a semantic way)</h2>
+    <p>In this sentence we have created <ins>a text with a new inserted part</ins>.</p>
+    <h2>The Unarticulated Annotation (Underline) Element(this is a non-semantic way).</h2>
+    <p>In this sentence we have created <u>an underlined text</u>.</p>
+    <h2>Subscript text</h2>
+    <p>In this sentence we have created a subscript element -> H<sub>2</sub>O.</p>
+    <h2>Superscript text</h2>
+    <p>In this sentence we have created a superscript elemnt -> x<sup>20</sup>+3.</p>
+</body>
+</html>
+
+<!--If ye select a text or a piece of text and press the control key + the shift key + 'p', a search bar will pop up and then ye type 'abb' and select the option "Emmet: Wrap with Abbreviation". Then type the letter that selects a tag ye might want, select the tag and hit return to confirm the selection. It'll enable ya to select any tag ye want to use with the selected text. Guanabara mentions that it's a better practice to use the strong(Important Text) and em(emphasized Text) tags instead of the i(italic) and b(bold) tags in HTML5 for they're semantic or meaningful tags. The tags i and b can be used normally in CSS3 for they're tools that we use to create or change a style, for they're format tags. Though this makes perfect sense, he also says that this is not an official rule and ye could use any of the mentioned tags at free will.
+On line 19, we're changing the colour of the marker by using the CSS3 tool/command "style". Next we selected "background-color" and lastly the desired colour. If you hover the cursor on the colour palette ye can choose the colour ye want in a faster way. Notice that if we create another line and use the mark tag, it won't have the same edited colour, but the default one(yellow) instead. In order to use the same edited colour on both lines, ye must go to "head" and then ye create style tag and then a selector(which is mark {} ), which yer going to select the mark tag and set whatever background-color ye want. It's important to remember that when using a selector, the elements ye want to set must be in between the set of its curly braces. The reason we typed mark {} is because we've got to specify the tag ye want to use a specific parameter.-->

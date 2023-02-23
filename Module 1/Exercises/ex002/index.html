@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="paragraph_icon.ico" type="image/x-icon">
+    <title>Paragraphs</title>
+</head>
+<body>
+    <h1>Paragraphs and breaking space</h1>
+    <hr>
+    <p>Ye can write a paragraph 
+        in whatever way ye want, 
+        as log as it's within the 'p' tags.</p> <!--notice that although this text has been created in a peculiar way, it's going to be displayed on the screen as though it was created normally, that is without any breaking spaces-->
+
+    <p>If ye need to create a breaking space, then all ye got to do is use the &ltbr&gt tag. In the following example, ye can see the tag &ltbr&gt creating a breaking space:</p>
+    <p>London Brigde is falling down <br> Falling down, falling down <br> London Bridge is falling down <br> My fair lady
+    </p>
+    <p>Let's add some special symbols:
+        &reg; <!--registered symbol-->
+        &copy; <!--copyright symbol-->
+        &trade; <!--trademark symbol-->
+        &euro; <!--the euro symbol-->
+        &pound; <!--the sterling pound symbol-->
+        &yen; <!-- the yen symbol-->
+        &cent; <!--the dollar cent symbol-->
+        &Delta; <!--the delta symbol-->
+        &uarr; <!--the up arrow symbol-->
+        and so on and so forth.
+    </p>
+    <p>Let's add some emoji:
+        &#x1F918;
+        &#x1F480;
+        &#x1F918;        
+    </p>
+</body>
+</html>
+
+<!--Notice that if we type any tag inside a paragraph in the way that we create them when coding, this tag's actually going to work normally, and chances are it could create some issues with the code. Eg, on the lines 14 and 16 we referred to tags just by putting them inside a single quotation marks, and not in the way we would if we were creating a code, and on line 17 ye can see how the tags 'br' work, we used them to create a piece of London Bridge Is Falling Down lyrics. Ye can see that although everything's inside a set of 'p' tags, the 'br' tags create the desired breaking spaces.
+
+Although we got to keep in mind all the things said above, Guanabara reveals that if we use &lt; instead of <, and &gt; instead of >, this way we can see the tags as a text, ie, they won't work as they would normally do if ye typed them inside the <> tags like, <p></p> or <br> and so on and so forth. So, if within a paragraph I type:  &lt;p&gt&lt/p&gt; what's going to be displayed on the screen is the actual <p></p> but in text format. lt stands for "less than", and gt stands for "greater than".
+
+To use emojis in HTML, ye got to type &#x at the beginning, then the specific emoji code and then we must end it with a ';'(semicolon). Ye can find a list of emojis and their unique codes on emojipedia.com -->

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="box_favicon.ico" type="image/x-icon">
+    <title>Types Of Boxes</title>
+    <style>
+        h1 {/*box-level*/
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;/*12 & 13 = box-sizing*/
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey;*/
+            border: 10px solid darkslategrey;/*shorthand*/
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+            /*padding: 10px 10px 10px 10px;*/
+            padding: 10px;/*shorthand*/
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+            /*margin: 20px 20px 40px 20px;*/
+            margin: 20px auto 40px auto;/*shorthand*/
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;*/
+            outline: 5px dashed blueviolet;/*shorthand*/
+            /*margin: auto;*/
+        }/*The padding and margin order is a clockwise direction: top, right, bottom and then left.*/
+
+        a { /*inline-level*/
+            /*border-width: 10px;
+            border-style: groove;
+            border-color: red;*/
+            border: 10px groove red;/*shorthand*/
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+            padding: 10px;/*shorthand*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Box-Level Example</h1>
+    <p>A paragraph is also an example of a box-level. The <a href="">links are inline-level</a>. Let's check them out.</p>
+</body>
+</html>
+
+<!--User agent means the browser ye might be using, and it displays the default settings of an item. This can be seen when ye inspect an element of yer website(shift+i)
+
+Using a shorthand eleminates the need to use more lines of code. Eg, we can use the shorthand border: 10px solid darkslategrey and it covers the width, style and color in this respective order, and ye don't need to use border-width, border-style and border-color properties. So, from 3 lines of code, ye can shorten it to only one line simply by using the shorthand. 
+
+On line 22, we got the same measures: padding 10px 10px 10px 10px, that is, 10px for the top, right, bottom and left. And instead of codding this way, we can simply use padding: 10px; and that means that we're setting 10px to the top, right, bottom and left. This can checked out on the DevTools by simply clicking on the element and then on the grey arrow that ye will see in front of the property. If, however, I code like so: padding: 10px 20px, I'm setting 10px to the top and bottom and 20px to the right and left-hand sides.
+
+Notice that on line 28 we must set all the 4 ones cos the bottom is 40px, thus making it impossible to use the shorthands that were shown previously.
+
+On line 29 we set that the top is 20px, the right is auto, the bottom is 40px and the right is also auto. This centres the box on the browser.
+
+h1 is box-level. If I wanted to change this, all I had to do was display: inline; . The a is inline-level, and if I wanted to change this, display: block; would be just the ticket. Using this display:; property allows ya to change the element default display features.
+
+display: inline-block; is still inline-level, however, it allows ya to temper with it as though it's a box, ie, ye can change the height, width etc. -->

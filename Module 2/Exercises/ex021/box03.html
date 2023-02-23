@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="box_favicon.ico" type="image/x-icon">
+    <title>Custom Border</title>
+    <style>
+        h1 {
+            border: 20px solid transparent;/*If I remove this, the border-image won't work at all.*/
+            padding: 10px;
+            /*border-image-source: url(border.png);
+            border-image-slice: 39;
+            border-image-repeat: stretch; the shorthand is used below amd follows this sequence: url, image-slice and image-repeat:*/
+            border-image: url(border.png) 39 repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border Test</h1>
+</body>
+</html>
+
+<!--We can the value 'transparent' in case a web browser is not compatible with a custom border. And as matter of fact, there are some browsers that are not. In this case, ye got to choose an appropriate colour to solve this issue. -->

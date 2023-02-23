@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="link.ico" type="image/x-icon">
+    <title>Working With Links</title>
+</head>
+<body>
+    <h1>How To Use External And Internal Links</h1>
+    <h2>Using External Links</h2>
+    <p>The &lta&gt tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the &lta&gt element is the 'href' attribute, which indicates the link's destination. You can also create a hyperlink for an external website. To make a hyperlink in an HTML page, use the &lta&gt and &lt/a&gt tags, which are the tags used to define the links. The &lta&gt tag indicates where the hyperlink starts and the &lt/a&gt tag indicates where it ends. <br> Tips: If the &lta&gt tag has no 'href' attribute, it is only a placeholder for a hyperlink. A linked page is normally displayed in the current browser window, unless you specify another target.</p>
+    <p>Ye can <a href="https://www.bbc.com/" target="_blank" rel="external">click here</a> to go to the BBC homepage.</p>
+    <p>Ye can also check BBC Sounds and have access to a plethora of local radio stations by <a href="https://www.bbc.co.uk/sounds" target="_blank" rel="external">clicking here</a>.</p>
+    <p>Also, find out more about LBC and other Global stations bringing ye the latest news in the UK, as well as music and entertainment <a href="https://www.lbc.co.uk/" target="_blank" rel="external">here</a>.</p>
+    <p>Wanting to find out about the latest news of the rock n' roll world? Go to the Planet Rock website and check out the latest news and gigs updates <a href="https://planetradio.co.uk/planet-rock/" target="_blank" rel="external">here</a>.</p>
+    <h2>Using Internal Links</h2>
+    <p>HTML internal link is linked within the same web page. This link can be an absolute path or relative path. HTML internal link name is followed by the hash sign(#). You have to assign an id to refer section of your page, which is referred to as an internal link to the same page. This is an example of using an internal link on the same webpage:</p>
+    <p>This is the homepage of our website. If ye want to check out more about our luv to Iron Maiden, <a href="pag002.html" target="_self" rel="next">click here</a>.</p>
+    <p>Find out more about drama, comedy, documentaries, interviews and much more by <a href="news/pag003.html" target="_self" rel="next">clicking here</a>.</p>
+    <p>Find out more about the latest sport news <a href="sport_news/pag004.html" target="_self" rel="next">here</a>.</p>
+    <h2>Download links</h2>
+    <p>You can use the HTML download attribute to specify that the target will be downloaded when a user clicks on the hyperlink. The download attribute is only used if the href attribute is set. The value of the attribute will be the name of the downloaded file. There are no restrictions on allowed values, and the browser will automatically detect the correct file extension and add it to the file (.img, .pdf, .txt, .html, etc.). You can also specify a value for the download attribute, which will be the new filename of the downloaded file. If the value is omitted, the original filename is used.</p>
+    <ul>
+        <li><a href="book/Ed Friedland - Bass Method (Hal Leonard).pdf" download="Ed Friedland - Bass Method (Hal Leonard).pdf" type="application/pdf">Download the PDF</a></li>
+        <li><a href="book/Ed Friedland - Bass Method (Hal Leonard).zip" download="Ed Friedland - Bass Method (Hal Leonard).zip" type="application/zip">Download the zip file</a></li>
+    </ul>
+</body>
+</html>
+
+<!--In order to be redirected to a new tab when ye click on the link, ye must use the parameters 'target="_blank"' and rel="external" which must be placed right after the url. If these parameters are not used, then the user will be redirected to the new url but on the same tab, which means that he's got to go back to the previous website he was browsing before. This is a highly recommended procedure when using external links.
+
+When it comes to using an internal link, it's vital that the files are inside the same folder. otherwise it's not going to work properly. In this case, we got index.html and pag002.html inside the ex010 folder. And since this is an internal link, there's no need to pass the url for the page, so long as the file is inside the same folder as the index.html one.
+
+Notice that once the user has been redirected to the other page, they'll need to be redirected back to the homepage if they wanted to. To enable this we must do the same procedure on the other page, ie, from that very page we will redirect the user to the homepage. We must also use the parameter 'rel="next"' when we're redirecting the user to an internal page and, to redirect them back to the homepage, we got to use 'rel="prev"'. Notice the the former is placed on the index.html file and the latter on the pag002.html file. This is necessary to be done so that when a search engine website is looking for a page, they can tell straightaway which one's which one, ie, the search engine website can tell which one is the homepage and which one is not, or simply which one is the next webpage and which one is the previous webpage.
+On the pag002.html file, we have used the parameter "nofollow", and it simply links to an unendorsed document, like a paid link. "nofollow" is used by Google, to specify that the Google search spider should not follow that link.
+
+Since we had created the folder "news" inside the ex010, and inside this folder we created the pag003.html, in order to redirect the user back to the homepage from the news page, we must create the parameter 'href' and code '../' inside it, which means "go back to the previous folder". Without this parameter the page would crash for it would not be able to find this file.-->

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="challenge_7_icon.ico" type="image/x-icon">
+    <title>Challenge 7</title>
+</head>
+<body>
+    <h1>Responsive Web Design- Images</h1>
+    <p>Resize the browser window to see how the image scales to fit the page.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="pics/tower_bridge_300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="pics/tower_bridge_700.png" type="image/png">
+        <img src="pics/tower_bridge_1000.png" alt="flexible_image">
+    </picture>
+    <p>Tower Bridge in London, England.</p><br><br><br><br>
+    <p>It's imperative to memorise the correct tag and syntax to solve this sort of issue. First of all we got to remember that everything must be wrapped up inside the &ltpicture&gt tag. Next we create the "default" image(the largest one) by using the &ltimg&gt tag and we select the image that's going to be used. Then, above this line of code, we use the &ltsource&gt tag and use the parameter "max-width" and set it with the pixels size of the default image and set the image(the medium one) that's going to be shown instead if the browser cannot display the default one inside the "srcset" parameter. Finally we set the smallest image, and all we do is repeat the previous step: inside the "max-width" parameter we set the pixel size of the medium image and then, inside the "srcset" parameter, we set the smallest image to be displayed if the user's browser cannot show the medim-sized image. We can use as many pictures as necessary to make the page more user-friendly.</p>
+</body>
+</html>
