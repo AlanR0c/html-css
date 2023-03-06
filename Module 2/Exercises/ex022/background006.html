@@ -5,20 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Fixed Background Example</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('images/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: no-repeat; /*this makes sure that the background image is not fragmented*/
-            background-size:  cover; /*100% of height and width. Ye can also use 'contain' and this will make sure the image is centralised all the time, though it creates some sort of borders. This must be used at all bloody times, otherwise the background image gets smaller on the screen*/
+            background-repeat: no-repeat;*/ /*repeat-y ensures that the backround pic is displayed in the y axis by repeating it, and the same function can be applied to the x axis by using repeat-x, whilst non-repeat makes sure that the background image is not fragmented*/
+            /*background-size:  cover;*/ /*100% of height and width. Ye can also use 'contain' and this will make sure the image is centralised all the time, though it creates some sort of borders. This must be used at all bloody times, otherwise the background image gets smaller on the screen*/
+            /*background-attachment: fixed;*/ /*this renders the background image set properly no matter how long the website page content might be. */
+
+            /*Using the background shorthand
+            
+            This shorthand is extremely useful, for it eliminates the need to use multiple lines of code. Instead, we can use only one.
+            
+            Background shorthand order:
+            1- colour
+            2- image
+            3- position
+            4- repeat
+            5- size*
+            6- attachment
+
+            *However, for some yet unknow and bloody annoying reason, the size property doesn't work with the background shorthand. Therefore, we must use background-size after the shorthand nevertheless.
+            */
+            
+            background: black url('images/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,7 +49,41 @@
 <body>
     <main>
         <h1>Background Image Test</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, amet dicta! Quasi odit laudantium, molestias omnis tempore voluptatem mollitia enim, natus repellat, temporibus labore provident molestiae odio itaque dignissimos ipsa! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis facilis, quod quibusdam architecto animi assumenda sit impedit expedita obcaecati beatae, quo, nisi odio officia aspernatur repellendus! Corporis repellat ipsa minus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum autem tempore expedita, dolores, vero ullam incidunt ipsam cum blanditiis beatae, corrupti ea natus consequatur harum architecto maxime quas similique aliquid.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint alias distinctio quae corporis perspiciatis harum hic impedit qui. Ipsa distinctio, dicta accusamus excepturi cumque necessitatibus corporis aspernatur hic expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque facere corporis illum porro quisquam, sunt consectetur repellendus. Fugit commodi obcaecati ipsa odio nihil velit harum. Cum, quidem quia. Aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam, eius sunt aliquid ipsum autem dolorum quos. Ipsum mollitia officiis doloremque ullam error dolor dignissimos rem quos facilis, aliquid temporibus?
+        </p>
     </main>
 </body>
 </html>
