@@ -11,18 +11,21 @@
             background-image: url(images/target001.png);
             background-size: 100% 100%;/*this sets the image to be entirely displayed on the screen*/
             position: relative;
-            height: 500px;
+            height: 96vh;
             padding: 10px;
             background-color: purple;
         }
 
         #content {
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
             position: absolute;
             height: 200px;
             width: 400px;
             background-color: yellow;
             left: 50%;
             top: 50%;
+            transform: translate(-50% - 50%);/*this enables ye to move all the content to a desired or specific position on the screen. Eg 20px 20px -> it's going to move to content 20px to the right-hand side and 20px downwards. Note that it can also take negative values, which then inverts the way the content is moved. Eg, -20px -20px is going to move the content 20px to the left-hand side and 20px upwards. -50% -50% means that now we got the content equally centred, both horizontally and vertically.*/
         }
     </style>
 </head>
@@ -41,4 +44,6 @@ He also mentions that margin: auto; only works for centre align.
 
 He explains that box position in HTML and CSS will always be relative.
 
-Then he mentions that the rule of thumb regarding container and its contents is as follows: the container will always have position: relative and the content will be set to position: absolute. By doing this, ye can easily adjust the position of the content inside the container by using left and top, since the position is absolute. Eg, left 100px; top 200px;-->
+Then he mentions that the rule of thumb regarding container and its contents is as follows: the container will always have position: relative and the content will be set to position: absolute. By doing this, ye can easily adjust the position of the content inside the container by using left and top, since the position is absolute. Eg, left 100px; top 200px;
+
+The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.-->
