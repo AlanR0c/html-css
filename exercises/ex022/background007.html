@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <title>Vertical Align</title>
+    <style>
+        #container {
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;/*this sets the image to be entirely displayed on the screen*/
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #content {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section id="conainer">
+        <article id="content">
+
+        </article>
+    </section>
+</body>
+</html>
+
+<!--Guanabara mentions that, every single time you're going to vertically centre things, you must have a container and the content inside this container.
+
+He also mentions that margin: auto; only works for centre align.
+
+He explains that box position in HTML and CSS will always be relative.
+
+Then he mentions that the rule of thumb regarding container and its contents is as follows: the container will always have position: relative and the content will be set to position: absolute. By doing this, ye can easily adjust the position of the content inside the container by using left and top, since the position is absolute. Eg, left 100px; top 200px;-->
